@@ -10,7 +10,8 @@ using namespace std;
 string GetBankBallanceSummary(float balance)
 {
 	stringstream bankSummaryStream;
-	bankSummaryStream << "Bank balance is: " << balance << endl;
+	bankSummaryStream.precision(2);
+	bankSummaryStream << "Bank balance is $" << balance << endl;
 	return bankSummaryStream.str();
 
 }
