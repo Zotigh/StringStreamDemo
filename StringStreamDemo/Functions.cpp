@@ -11,6 +11,7 @@ string GetBankBallanceSummary(float balance)
 {
 	stringstream bankSummaryStream;
 	bankSummaryStream.precision(2);
+	bankSummaryStream.setf(ios::fixed);
 	bankSummaryStream << "Bank balance is $" << balance << endl;
 	return bankSummaryStream.str();
 
